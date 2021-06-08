@@ -7,14 +7,14 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
       - name: echo
         run: cat testfile.txt
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - name: Set env vars (dev)
         if: endsWith(github.ref, '/dev')
