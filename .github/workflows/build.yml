@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: echo
-        run: echo "commit on dev"
+        run: cat testfile.txt
 
   deploy:
     runs-on: ubuntu-latest
